@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <!-- saved from url=(0058)http://webdesignpro09.info/tf-15/blue-colors-white-layout/ -->
 <html lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">  
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
     <title>贝帮-你的校园帮手</title>
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="beibang_files/ic_launcher.png">
     <meta name="description" content="">
     <meta name="author" content="">
-        
+
 	<!-- 1140px Grid styles for IE -->
 	<!--[if lte IE 9]><link rel="stylesheet" href="lib/css/ie.css" type="text/css" media="screen" /><![endif]-->
 
@@ -20,191 +20,214 @@
     <link href="./beibang_files/css" rel="stylesheet" type="text/css">
     <link href="./beibang_files/css(1)" rel="stylesheet" type="text/css">
     <!-- end CSS-->
-    
+
     <script src="./beibang_files/jquery-1.10.2.min.js"></script>
     <script src="./beibang_files/jquery-migrate-1.2.1.js"></script>
-    
+
 </head>
 
 <body style="">
 
+    <script type="text/javascript">
+    var browser={
+        versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+//            alert(u);
+            return {
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                weChat: u.indexOf('MicroMessenger')> -1
+            };
+        }()
+    }
+</script>
+
+
     <!--begin container -->
     <div id="container">
-                
+
         <!--begin intro -->
         <div id="intro">
-        
+
             <!--begin header_wrapper -->
             <header id="header_wrapper">
-                
-                <!--begin header -->    
+
+                <!--begin header -->
                 <div id="header" class="clearfix">
                             <!--begin logo -->
                             <a href="#" id="logo">LightTech</a>
                             <!--end logo -->
-                            
+
                 </div>
                 <!--end header -->
-                
+
             </header>
             <!--end header_wrapper -->
-            
+
             <!--begin home section -->
             <section id="home">
-            
+
             	<!--begin home_box -->
                 <div class="home_box bounce_fade animated bounceIn">
 
                     <span class="home_text1">贝帮客户端现已上线！</span>
-                                            
+
                     <span class="home_text2">支持Android4.0与iOS 7.0及以上版本</span>
-                    
-                    <a href="https://lithium.b0.upaiyun.com/beibang.apk" class="home_text3">Android</a>
-                    <a href="https://itunes.apple.com/us/app/bei-bang-ni-xiao-yuan-sheng/id882831601?ls=1&mt=8" class="home_text3">iOS</a>
-                
+
+                    <a href="https://lithium.b0.upaiyun.com/beibang.apk" class="home_text3" id="android-down-only">Android</a>
+                    <a href="https://itunes.apple.com/us/app/bei-bang-ni-xiao-yuan-sheng/id882831601?ls=1&mt=8" class="home_text3" id="ios-down-only">iOS</a>
+
                 </div>
                 <!--end home_box -->
-                                        
+
             </section>
             <!--end home section -->
-            
+
         </div>
         <!--end intro -->
 
-                
+
         </div>
         <!--end testimonials_wrapper -->
-        
+
         <!-- begin features_wrapper -->
         <div class="features_wrapper">
-        	
+
             <!-- begin features_box -->
             <div class="features_box">
-                 
+
                 <!-- begin row -->
                 <div class="row">
-                    
+
                     <!-- begin twelvecol -->
                     <div class="twelvecol">
-                    
+
                     	<span class="features_title_big up_fade animated fadeInUp">贝帮 你的校园生活帮手</span>
-                        
+
                         <span class="features_title_small up_fade animated fadeInUp">举手之劳不躲藏</span>
-                    
+
                         <!--begin features_left -->
                         <div class="features_left padding_top_large left_fade animated fadeInLeft">
-                            
+
                             <!--begin features_item -->
                             <div class="features_item">
-                                    
+
                                 <span class="dropcaps_right"><i class="fa fa-quote-left"></i></span>
 
                                 <div class="text_align_right">
                                     <h4 class="small_margins">发布任务</h4>
                                     <p>肚子饿了求带饭？正在上课求取快递？还是睡过了求占座？只要是你之所需，发布一条任务吧...</p>
                                 </div>
-                                
+
                             </div>
                             <!--end features_item -->
-                            
+
                             <!--begin features_item -->
                             <div class="features_item">
-                                
+
                                 <span class="dropcaps_right"><i class="fa fa-comments"></i></span>
-                                
+
                                 <div class="text_align_right">
                                     <h4 class="small_margins">取得联系</h4>
                                     <p>发布的任务将会被别的小伙伴看到并领取，领取成功之后你们将分享联系方式取得联系</p>
                                 </div>
-                                    
+
                             </div>
                             <!--end features_item -->
-                            
+
                             <!--begin features_item -->
                             <div class="features_item">
-                                
+
                                 <span class="dropcaps_right"><i class="fa fa-smile-o"></i></span>
-                                
+
                                 <div class="text_align_right">
                                     <h4 class="small_margins">解决问题</h4>
                                     <p>小伙伴帮助你解决了问题，拿什么回报TA呢？由你决定啦！其实，一个甜甜的笑就足够了呢</p>
                                 </div>
-                                        
+
                             </div>
                             <!--end features_item -->
-                            
+
                         </div>
                         <!--end features_left -->
-                        
+
                         <!--begin features_center -->
                         <div class="features_center nodisplay up_fade animated fadeInUp">
-                            
+
                             <img src="./beibang_files/nexus5.png" alt="Picture">
-                            
+
                         </div>
                         <!--end features_center -->
-                        
+
                         <!--begin features_right -->
                         <div class="features_right padding_top_large right_fade animated fadeInRight">
-                            
+
                             <!--begin features_item -->
                             <div class="features_item">
-                                    
+
                                 <span class="dropcaps_left"><i class="fa fa-map-marker"></i></span>
-                                
+
                                 <div class="text_align_left">
                                     <h4 class="small_margins">发现所需</h4>
                                     <p>根据自己所处的位置搜寻和探索身边举手之劳的事，需要帮助的人</p>
                                 </div>
-                                            
+
                             </div>
                             <!--end features_item -->
-                            
+
                             <!--begin features_item -->
                             <div class="features_item">
-                                
+
                                 <span class="dropcaps_left"><i class="fa fa-umbrella"></i></span>
-                                
+
                                 <div class="text_align_left">
                                     <h4 class="small_margins">赠人玫瑰</h4>
                                     <p>在TA最需要帮助的时候，你华丽丽的出场，像一个救世主一样搞定一切！</p>
                                 </div>
-                                            
+
                             </div>
                             <!--end features_item -->
-                            
+
                             <!--begin features_item -->
                             <div class="features_item">
-                                
+
                                 <span class="dropcaps_left"><i class="fa fa-heart"></i></span>
-                                
+
                                 <div class="text_align_left">
                                     <h4 class="small_margins">手有余香</h4>
                                     <p>校园里洋溢着一片互帮互助的气氛。接下来？都已经认识TA了，你懂的...贝帮只能帮你到这了</p>
                                 </div>
-                                            
+
                             </div>
                             <!--end features_item -->
-                            
+
                         </div>
                         <!--end features_right -->
-                        
+
                     </div>
                     <!-- end twelvecol -->
-                    
+
                 </div>
                 <!-- end row -->
-            
+
             </div>
             <!-- end features_box -->
-            
+
         </div>
         <!-- end features_wrapper -->
-        
-        
+
+
         <!-- begin newsletter_wrapper -->
         <div class="newsletter_wrapper">
-        	
+
             <!--begin info_transparent -->
             <div class="info_transparent bounce_fade animated bounceIn">
                 <h3>贝帮 来自北科</h3>
@@ -253,168 +276,168 @@
                 <h2 class="up_fade animated fadeInUp">献给我们的母校，献给所有热爱生活的人</h2>
             </div>
             <!--end portfolio_title -->
-                    
-                <!--begin portfolio_list -->   
+
+                <!--begin portfolio_list -->
                 <ul id="list" class="portfolio_list">
-                    
+
                     <!--begin portofolio_item_4col -->
                     <li class="portofolio_item_4col">
-                        
+
                         <div class="view view-first">
                             <a href="./beibang_files/work1.jpg" class="prettyPhoto[gallery1]">
                                 <img src="./beibang_files/work1.jpg">
 
                             </a>
                         </div>
-                    
+
                     </li>
                     <!--end portofolio_item_4col -->
-                    
+
                     <!--begin portofolio_item_4col -->
                     <li class="portofolio_item_4col">
-                        
+
                         <div class="view view-first">
                             <a href="./beibang_files/work2.jpg" class="prettyPhoto[gallery1]">
                                 <img src="./beibang_files/work2.jpg">
                             </a>
                         </div>
-                    
+
                     </li>
                     <!--end portofolio_item_4col -->
-                     
+
                     <!--begin portofolio_item_4col -->
                     <li class="portofolio_item_4col">
-                        
+
                         <div class="view view-first">
                             <a href="beibang_files/work7.jpg" class="prettyPhoto[gallery1]">
                                 <img src="beibang_files/work7.jpg">
                             </a>
                         </div>
-                    
+
                     </li>
                     <!--end portofolio_item_4col -->
-                    
+
                     <!--begin portofolio_item_4col -->
                     <li class="portofolio_item_4col">
-                        
+
                         <div class="view view-first">
                             <a href="./beibang_files/work6.jpg" class="prettyPhoto[gallery1]">
                                 <img src="./beibang_files/work6.jpg">
                             </a>
                         </div>
-                    
+
                     </li>
                     <!--end portofolio_item_4col -->
-                    
+
                     <!--begin portofolio_item_4col -->
                     <li class="portofolio_item_4col">
-                        
+
                         <div class="view view-first">
                             <a href="beibang_files/work4.jpg" class="prettyPhoto[gallery1]">
                                 <img src="beibang_files/work4.jpg">
                             </a>
                         </div>
-                    
+
                     </li>
                     <!--end portofolio_item_4col -->
-                    
+
                     <!--begin portofolio_item_4col -->
                     <li class="portofolio_item_4col">
-                        
+
                         <div class="view view-first">
                             <a href="./beibang_files/work3.jpg" class="prettyPhoto[gallery1]">
                                 <img src="./beibang_files/work3.jpg">
                             </a>
                         </div>
-                    
+
                     </li>
                     <!--end portofolio_item_4col -->
-                                    
+
                 </ul>
                 <!--end portfolio_list -->
-                
+
         </section>
         <!--end portfolio section -->
 
-        
+
         <!--begin section_wrapper -->
         <section class="section_wrapper">
-            
+
             <!--begin section_box -->
             <div class="section_box">
-              
+
                 <!--begin row -->
                 <div class="row">
-                    
+
                     <!--begin twelvecol -->
                     <!--<div class="twelvecol">-->
-                    
+
                         <!--begin section_description -->
                     <!--    <div class="section_description left_fade animated fadeInLeft">-->
-                            
+
                     <!--        <p>iOS版即将公测，尽请期待</p>-->
 
                     <!--    </div>-->
                         <!--end section_description -->
-                        
+
                         <!--begin section_image -->
                     <!--    <div class="section_image right_fade animated fadeInRight">-->
-                            
+
                     <!--        <img src="./beibang_files/iphone4.png" alt="picture">-->
-                                                                   
+
                     <!--    </div>-->
                         <!--end section_image -->
-                         
+
                     <!--</div>-->
                     <!--end twelvecol -->
-                    
+
                 </div>
                 <!--end row -->
-                
+
             </div>
             <!--end section_box -->
-            
+
         </section>
         <!--end section_wrapper -->
-        
+
         <!--begin footer -->
         <footer id="footer">
-            
+
             <!--begin row -->
             <div class="row">
-                
+
                 <!--begin twelvecol -->
-                <div class="twelvecol">  
-            
-                    <!--begin copyright -->            
+                <div class="twelvecol">
+
+                    <!--begin copyright -->
                     <p class="copyright">Copyright © 2014 Lighttech. All rights reserved.</p>
                     <!--end copyright -->
-                    
+
                 </div>
                 <!--end twelvecol -->
-                
+
             </div>
             <!--end row -->
-        
+
         </footer>
         <!--end footer -->
-           
+
     </div>
     <!--! end of #container -->
-    
+
     <!-- scripts concatenated and minified via ant build script-->
     <script src="./beibang_files/modernizr-2.6.1.min.js"></script>
     <script src="./beibang_files/conditional.js"></script>
     <script src="./beibang_files/jquery.prettyPhoto.js"></script>
     <script src="./beibang_files/script.js"></script>
     <script src="./beibang_files/jquery.inview.js"></script>
-    
+
     <!-- begin slider script-->
     <script src="./beibang_files/responsiveslides.min.js"></script>
   	<script>
 		// You can also use "$(window).load(function() {"
 		$(function () {
-	
+
 		  // Slideshow 4
 		  $("#slider4, #slider3").responsiveSlides({
 			auto: true,
@@ -431,10 +454,63 @@
 			  $('.events').append("<li>after event fired.</li>");
 			}
 		  });
-	
+
 		});
   	</script>
     <!-- end slider script-->
-    
 
+    <script type="text/javascript">
+
+    if(browser.versions.android){
+        $("#download-buttons").hide();
+        $("#android-down-only").show();
+    }else if(browser.versions.ios){
+        $("#download-buttons").hide();
+        $("#ios-down-only").show();
+    }
+
+    // MT.weixintips();
+    function wechatit() {
+        var a = null,
+                b = !1,
+                c = function(c) {
+                    //'+window.navigator.userAgent+'
+                    a = $('<div style="position: fixed; top: 0; left: 0; width: 100%; z-index: 999; height: 100%; background: rgba(0,0,0,0.5)"></div>');
+                    var d = '<style>i.tm-wx {display: inline-block; background: url("http://shanshanstatic.b0.upaiyun.com/html/index_files/wx_tips.png") no-repeat; background-size: 61px auto; line-height: 300px; overflow: hidden; height: 27px; width: 48px; margin: 0 5px; vertical-align: middle;}ol li {margin: 12px 0 26px; line-height: 1.4em;}ol li:before {margin-left: -14px;}</style>',
+                            e = '<div style="background: #fff; border-radius: 0 0 6px 6px; margin: 0 10px; padding: 15px"><div style="font-size: 18px; margin-bottom: 10px;text-align:left">请用浏览器打开下载：</div><ol style="padding-left: 22px;"><li>点击右上角的<i class="tm-wx" style="background-position: 0 -112px">...</i>或者<i class="tm-wx" style="background-position: 0 -143px">分享</i></li>' + ("ios" !== c ? '<li>选择在浏览器中打开<br><br>即可下载闪闪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="tm-wx" style="margin-top:-23px; width: 47px; height: 47px; background-position: 0 -61px;">浏览器</i></li>': '<li>选择在Safari中打开<br>即可下载闪闪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="tm-wx" style="margin-top:-28px; width: 61px; height: 61px;">Safari</i></li>') + "</ol>" + '<i class="tm-wx" style="position: fixed; top: 10px; right: 20px; width: 31px; height: 56px; background-position: 0 -175px">右上角</i>' + "</div>";
+                    a.append(d + e),
+                            $("body").append(a),
+                            $("body").on("click",
+                                    function(c) {
+                                        b && !$(c.target).hasClass("mj-down") && (a.css("display", "none"), b = !1)
+                                    })
+                },
+                d = window.navigator.userAgent;
+        var isSafari = (navigator.userAgent.indexOf('iPhone') >0)||(navigator.userAgent.indexOf('iPad')>0)||(navigator.userAgent.indexOf('iPod') >0)||(navigator.userAgent.indexOf('like Mac') >0);
+        //MicroMessenger
+        d.indexOf("MicroMessenger") > 0 && $(".iphone-down").on("click",
+                function(d) {
+                    d.preventDefault(),
+                        // null != a ? a.css("display", "block") : c($.os.ios ? "ios": ""),
+                                    null != a ? a.css("display", "block") : c(isSafari?"ios":""),
+                            b = !0
+                })
+
+        // d.indexOf("Safari") > 0 && $("body").on("click", "iphone-down",
+        // function(d) {
+        //     d.preventDefault(),
+        //     null != a ? a.css("display", "block") : c($.os.ios ? "ios": ""),
+        //     b = !0
+        // })
+    };
+    wechatit();
+</script>
+
+<script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+    function hideURLbar(){
+        window.scrollTo(0,1);
+    }
+</script>
 </body></html>
