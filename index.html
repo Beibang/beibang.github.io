@@ -479,7 +479,6 @@
                     var d = '<style>i.tm-wx {display: inline-block; background: url("./beibang_files/wx_tips.png") no-repeat; background-size: 61px auto; line-height: 300px; overflow: hidden; height: 27px; width: 48px; margin: 0 5px; vertical-align: middle;}ol li {margin: 12px 0 26px; line-height: 1.4em;}ol li:before {margin-left: -14px;}</style>',
                             e = '<div style="background: #fff; border-radius: 0 0 6px 6px; margin: 0 10px; padding: 15px"><div style="font-size: 18px; margin-bottom: 10px;text-align:left">请用浏览器打开下载：</div><ol style="padding-left: 22px;"><li>点击右上角的<i class="tm-wx" style="background-position: 0 -112px">...</i>或者<i class="tm-wx" style="background-position: 0 -143px">分享</i></li>' + ("ios" !== c ? '<li>选择在浏览器中打开<br><br>即可下载贝帮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="tm-wx" style="margin-top:-23px; width: 47px; height: 47px; background-position: 0 -61px;">浏览器</i></li>': '<li>选择在Safari中打开<br>即可下载贝帮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="tm-wx" style="margin-top:-28px; width: 61px; height: 61px;">Safari</i></li>') + "</ol>" + '<i class="tm-wx" style="position: fixed; top: 10px; right: 20px; width: 31px; height: 56px; background-position: 0 -175px">右上角</i>' + "</div>";
                     a.append(d + e),
-                    console.log("this is a:\n"+a);
                             $("body").append(a),
                             $("body").on("click",
                                     function(c) {
