@@ -490,9 +490,10 @@
         //MicroMessenger
         d.indexOf("MicroMessenger") > 0 && $(".iphone-down").on("click",
                 function(d) {
-                    alert("wechat!!!!");
+                    // alert("wechat!!!!");
                     d.preventDefault(),
-                        // null != a ? a.css("display", "block") : c($.os.ios ? "ios": ""),
+                    // null != a ? a.css("display", "block") : c($.os.ios ? "ios": ""),
+                    console("a is :"+a);
                    null != a ? a.css("display", "block") : c(isSafari?"ios":""),
                     b = !0
                 })
