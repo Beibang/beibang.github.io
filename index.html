@@ -491,12 +491,13 @@
         //MicroMessenger
         d.indexOf("MicroMessenger") > 0 && $(".iphone-down").on("click",
                 function(d) {
-                    // alert("wechat!!!!");
-                    d.preventDefault(),
-                    // null != a ? a.css("display", "block") : c($.os.ios ? "ios": ""),
-                    console.log("c is :"+c)
-                   null != a ? a.css("display", "block") : c(isSafari?"ios":""),
-                    b = !0
+                    d.preventDefault();
+                   null != a ? a.css("display", "block") : c(isSafari?"ios":"");
+                    b = !0;
+                    if(isSafari)
+                        alert("微信内置浏览器请摁右上角从Safari打开下载！");
+                    else
+                        alert("微信内置浏览器请摁右上角从系统浏览器打开下载！");
                 })
 
         // d.indexOf("Safari") > 0 && $("body").on("click", "iphone-down",
